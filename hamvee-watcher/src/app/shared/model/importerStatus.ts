@@ -1,5 +1,3 @@
-import { URL } from 'url';
-
 export class ImporterStatus {
 
     lastFinishTime: Date;

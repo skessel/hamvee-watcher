@@ -1,0 +1,12 @@
+<div *ngFor="let overview of overviews">
+  <span>{{overview.name}}</span>
+  <br>
+  <p>Matooi</p>
+  <span>{{overview.matooiPing?.ping.hostname}}</span>
+  <br>
+  <p>Importer</p>
+  <span>{{overview.importerStatus?.success}}</span>
+  <br>
+  <p>Item Task</p>
+  <span>{{overview.itemStatus?.field}}</span>
+</div>

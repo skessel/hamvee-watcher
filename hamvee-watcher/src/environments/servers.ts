@@ -4,14 +4,16 @@ import { URL } from 'url';
 
 export class Servers {
 
-    readonly BULLRING: Server = new Server('Bullring',
-        new URL(environment.bullringMatooiUrl),
-        new URL(environment.bullringItemTaskUrl),
-        new URL(environment.bullringItemTaskUrl));
+    static readonly BULLRING: Server = new Server('Bullring',
+        environment.bullringMatooiUrl,
+        environment.bullringItemTaskUrl,
+        environment.bullringImporterUrl);
 
-    readonly BRENTCROSS: Server = new Server('Brentcross',
-        new URL(environment.brentcrossMatooiUrl),
-        new URL(environment.brentcrossItemTaskUrl),
-        new URL(environment.brentcrossItemTaskUrl));
+    static readonly BRENTCROSS: Server = new Server('Brentcross',
+        environment.brentcrossMatooiUrl,
+        environment.brentcrossItemTaskUrl,
+        environment.brentcrossImporterUrl);
+
+    static readonly SERVERS: Array<Server> = [Servers.BULLRING, Servers.BRENTCROSS];
 
 }

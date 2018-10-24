@@ -4,3 +4,9 @@ export class MatooiStatus {
     remoteIP: string;
     hostname: string;
 }
+
+export class MatooiPing {
+
+    ping: MatooiStatus;
+
+}

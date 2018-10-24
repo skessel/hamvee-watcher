@@ -1,10 +1,11 @@
 import { Observable } from 'rxjs';
-import { URL } from 'url';
 import { HttpClient, HttpHeaders, HttpResponse, HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class HttpService {
 
-    constructor(protected httpClient: HttpClient) {
+    constructor(private httpClient: HttpClient) {
     }
 
     get(url: URL, headers: HttpHeaders, withCredentials: boolean): Observable<Object> {
