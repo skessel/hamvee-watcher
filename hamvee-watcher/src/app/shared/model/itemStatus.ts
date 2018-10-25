@@ -1,5 +1,7 @@
 export class ItemStatus {
 
-    field: string;
+    lastFinishTime: Date;
+    success: boolean;
+    sphere: string;
 
 }

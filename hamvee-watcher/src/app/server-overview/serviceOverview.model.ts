@@ -10,6 +10,8 @@ export class ServerOverviewModel {
     importerStatus: ImporterStatus;
     itemStatus: ItemStatus;
 
-    constructor(name: string) {}
+    constructor(name: string) {
+        this.name = name;
+    }
 
 }

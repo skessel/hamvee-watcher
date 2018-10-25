@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpService } from './shared/service/http.service';
 import { ServerOverviewComponent } from './server-overview/server-overview.component';
+import { SharedModule } from './shared/shared.module';
+import { APP_ROUTING } from './app-routing.module';
+import { MatCardModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -13,9 +15,11 @@ import { ServerOverviewComponent } from './server-overview/server-overview.compo
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule.forRoot(),
+    APP_ROUTING,
+    MatCardModule
   ],
-  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

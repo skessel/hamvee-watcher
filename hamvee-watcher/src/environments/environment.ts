@@ -8,11 +8,11 @@ export const environment: any = {
   production: false,
 
   brentcrossMatooiUrl: 'https://uat-bx.matooi.com/m2b/matooi/rest/ping',
-  brentcrossItemTaskUrl: 'http://uat-bx.matooi.com:5001/actuator',
+  brentcrossItemTaskUrl: 'http://uat-bx.matooi.com:5001/actuator/importerstatus',
   brentcrossImporterUrl : 'http://uat-bx.matooi.com:5000/actuator/importerstatus',
 
   bullringMatooiUrl: 'https://uat-bullring.matooi.com/m2b/matooi/rest/ping',
-  bullringItemTaskUrl: 'http://uat-bullring.matooi.com:5001/actuator',
+  bullringItemTaskUrl: 'http://uat-bullring.matooi.com:5001/actuator/importerstatus',
   bullringImporterUrl : 'http://uat-bullring.matooi.com:5000/actuator/importerstatus',
 };
 
