@@ -1,22 +1,9 @@
 <div *ngFor="let overview of overviews" class="overview-box">
     <mat-card >
         <mat-card-title>{{overview.name}}</mat-card-title>
-        
-        <mat-card-subtitle>Matooi</mat-card-subtitle>
-        
-        <mat-card-content>Hostname: {{overview.matooiPing?.ping.hostname}}</mat-card-content>
-        <mat-card-content>IP: {{overview.matooiPing?.ping.remoteIP}}</mat-card-content>
-        <mat-card-content>User-Agent: {{overview.matooiPing?.ping.httpUserAgent}}</mat-card-content>
-        
-        <mat-card-subtitle>Importer Task</mat-card-subtitle>
-        <mat-card-content>Success: {{overview.importerStatus?.success}}</mat-card-content>
-        <mat-card-content>Last finish time: {{overview.importerStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'}}</mat-card-content>
-        <mat-card-content>Center Location: {{overview.importerStatus?.sphere.timeZone}}</mat-card-content>
-    
-        <mat-card-subtitle>Item Task</mat-card-subtitle>
-        <mat-card-content>Success: {{overview.itemStatus?.success}}</mat-card-content>
-        <mat-card-content>Last finish time: {{overview.itemStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'}}</mat-card-content>
-        <mat-card-content>Sphere: {{overview.itemStatus?.sphere}}</mat-card-content>
+        <app-view-matooi [matooiPing] = "overview.matooiPing"></app-view-matooi>
+        <app-view-importer [importerStatus]= "overview.importerStatus"></app-view-importer>
+        <app-view-itemtask [itemStatus]= "overview.itemStatus"></app-view-itemtask>
     </mat-card>
 </div>
 

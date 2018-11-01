@@ -1,5 +1,4 @@
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { ServerOverviewModule } from './server-overview/server-overview.module';
 import { ServerOverviewComponent } from './server-overview/server-overview.component';
 import { ModuleWithProviders } from '@angular/core';
 
