@@ -14,6 +14,11 @@ export class Servers {
         environment.brentcrossItemTaskUrl,
         environment.brentcrossImporterUrl);
 
-    static readonly SERVERS: Array<Server> = [Servers.BULLRING, Servers.BRENTCROSS];
+    static readonly PLACESDESHALLES: Server = new Server('Place de Halles',
+        environment.placedeshallesMatooiUrl,
+        environment.placedeshallesItemTaskUrl,
+        environment.placedeshallesImporterUrl);
+
+    static readonly SERVERS: Array<Server> = [Servers.BULLRING, Servers.BRENTCROSS, Servers.PLACESDESHALLES];
 
 }

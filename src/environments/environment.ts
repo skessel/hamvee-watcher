@@ -14,6 +14,10 @@ export const environment: any = {
   bullringMatooiUrl: 'https://uat-bullring.matooi.com/m2b/matooi/rest/ping',
   bullringItemTaskUrl: 'http://uat-bullring.matooi.com:5001/actuator/importerstatus',
   bullringImporterUrl : 'http://uat-bullring.matooi.com:5000/actuator/importerstatus',
+
+  placedeshallesMatooiUrl: 'https://uat-placedeshalles.matooi.com/m2b/matooi/rest/ping',
+  placedeshallesItemTaskUrl: 'http://uat-placedeshalles.matooi.com:5001/actuator/importerstatus',
+  placedeshallesImporterUrl : 'http://uat-placedeshalles.matooi.com:5000/actuator/importerstatus',
 };
 
 /*
