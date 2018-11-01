@@ -1,10 +1,7 @@
-export class ImporterStatus {
+import { AbstractStatus } from './abstractStatus';
 
-    lastFinishTime: Date;
-    success: boolean;
-    sphere: Sphere;
+export class ImporterStatus extends AbstractStatus<Sphere> {
 
-    constructor() {}
 }
 
 export class Sphere {

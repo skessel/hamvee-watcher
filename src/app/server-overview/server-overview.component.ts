@@ -34,9 +34,11 @@ export class ServerOverviewComponent implements OnInit {
       });
       this.httpService.get(server.importerTaskURL, this.headers(), false).subscribe((status: Array<ImporterStatus>) => {
         this.overviews[index].importerStatus = status[0];
+        this.overviews[index].importerStatus.lastFinishTime = new Date(status[0].lastFinishTime);
       });
       this.httpService.get(server.itemTaskURL, this.headers(), false).subscribe((status: Array<ItemStatus>) => {
         this.overviews[index].itemStatus = status[0];
+        this.overviews[index].itemStatus.lastFinishTime = new Date(status[0].lastFinishTime);
       }, (error: HttpErrorResponse) => {
 
       });

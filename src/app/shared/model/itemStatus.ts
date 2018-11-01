@@ -1,7 +1,5 @@
-export class ItemStatus {
+import { AbstractStatus } from './abstractStatus';
 
-    lastFinishTime: Date;
-    success: boolean;
-    sphere: string;
+export class ItemStatus extends AbstractStatus<string> {
 
 }

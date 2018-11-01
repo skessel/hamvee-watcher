@@ -1,9 +1,13 @@
 <div *ngFor="let overview of overviews" class="overview-box">
     <mat-card >
         <mat-card-title>{{overview.name}}</mat-card-title>
-        <app-view-matooi [matooiPing] = "overview.matooiPing"></app-view-matooi>
-        <app-view-importer [importerStatus]= "overview.importerStatus"></app-view-importer>
-        <app-view-itemtask [itemStatus]= "overview.itemStatus"></app-view-itemtask>
+
+        <mat-accordion>
+            <app-view-matooi [matooiPing] = "overview.matooiPing"></app-view-matooi>
+            <app-view-importer [importerStatus]= "overview.importerStatus"></app-view-importer>
+            <app-view-itemtask [itemStatus]= "overview.itemStatus"></app-view-itemtask>
+        </mat-accordion>
+
     </mat-card>
 </div>
 

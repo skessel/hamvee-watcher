@@ -1,6 +1,19 @@
-<mat-card-subtitle>Item Task</mat-card-subtitle>
-<mat-card-content>Success: {{itemStatus?.success}}</mat-card-content>
-<mat-card-content>Last finish time: {{itemStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'}}</mat-card-content>
-<mat-card-content>Sphere: {{itemStatus?.sphere}}</mat-card-content>
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Item Task</mat-panel-title>
+      <mat-panel-description>
+          {{serviceStatus}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Success" readonly=true [value]="itemStatus?.success">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last finish time" readonly=true [value]="itemStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Sphere" readonly=true [value]="itemStatus?.sphere">
+      </mat-form-field>
+  </mat-expansion-panel>
 
 

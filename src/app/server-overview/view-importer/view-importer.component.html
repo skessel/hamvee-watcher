@@ -1,4 +1,17 @@
-<mat-card-subtitle>Importer Task</mat-card-subtitle>
-<mat-card-content>Success: {{importerStatus?.success}}</mat-card-content>
-<mat-card-content>Last finish time: {{importerStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'}}</mat-card-content>
-<mat-card-content>Center Location: {{importerStatus?.sphere.timeZone}}</mat-card-content>
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Importer Task</mat-panel-title>
+      <mat-panel-description>
+        {{serviceStatus}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Success" readonly=true [value]="importerStatus?.success">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last finish time" readonly=true [value]="importerStatus?.lastFinishTime | date:'dd-MM-yyyy HH:mm:ss'">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Location" readonly=true [value]="importerStatus?.sphere.timeZone">
+      </mat-form-field>
+  </mat-expansion-panel>

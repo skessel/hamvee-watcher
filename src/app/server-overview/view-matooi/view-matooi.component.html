@@ -1,4 +1,14 @@
-<mat-card-subtitle>Matooi</mat-card-subtitle>
-<mat-card-content>Hostname: {{matooiPing?.ping.hostname}}</mat-card-content>
-<mat-card-content>IP: {{matooiPing?.ping.remoteIP}}</mat-card-content>
-<mat-card-content>User-Agent: {{matooiPing?.ping.httpUserAgent}}</mat-card-content>
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Matooi</mat-panel-title>
+      <mat-panel-description>
+          {{serviceStatus}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Hostname" readonly=true [value]="matooiPing?.ping.hostname">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="IP" readonly=true [value]="matooiPing?.ping.remoteIP">
+    </mat-form-field>
+  </mat-expansion-panel>
