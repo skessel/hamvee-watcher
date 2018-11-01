@@ -12,6 +12,7 @@ import { ViewMatooiComponent } from './server-overview/view-matooi/view-matooi.c
 import { ViewImporterComponent } from './server-overview/view-importer/view-importer.component';
 import { ViewItemtaskComponent } from './server-overview/view-itemtask/view-itemtask.component';
 import { StatusCalculatorService } from './server-overview/service/statusCalculator.service';
+import { ServiceStatusColorDirective } from './server-overview/directive/serviceStatusColor.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StatusCalculatorService } from './server-overview/service/statusCalcula
     ServerOverviewComponent,
     ViewMatooiComponent,
     ViewImporterComponent,
-    ViewItemtaskComponent
+    ViewItemtaskComponent,
+    ServiceStatusColorDirective
   ],
   imports: [
     BrowserModule,

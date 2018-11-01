@@ -10,7 +10,7 @@ export class ViewMatooiComponent implements OnChanges {
 
   constructor(private statusCalculationService: StatusCalculatorService) { }
 
-  public serviceStatus: ServiceStatus;
+  public serviceStatus: ServiceStatus = ServiceStatus.ERROR;
 
   @Input()
   public matooiPing: MatooiPing;
