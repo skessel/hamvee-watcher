@@ -7,6 +7,12 @@ import { Server } from 'src/app/shared/model/server';
 export const environment: any = {
   production: false,
 
+  // login: 'server-watcher',
+  // password: 'pw_server-watcher_01',
+
+  login: 'user',
+  password: 'user',
+
   brentcrossMatooiUrl: 'https://uat-bx.matooi.com/m2b/matooi/rest/ping',
   brentcrossItemTaskUrl: 'http://uat-bx.matooi.com:5001/actuator/importerstatus',
   brentcrossImporterUrl : 'http://uat-bx.matooi.com:5000/actuator/importerstatus',
@@ -18,6 +24,7 @@ export const environment: any = {
   placedeshallesMatooiUrl: 'https://uat-placedeshalles.matooi.com/m2b/matooi/rest/ping',
   placedeshallesItemTaskUrl: 'http://uat-placedeshalles.matooi.com:5001/actuator/importerstatus',
   placedeshallesImporterUrl : 'http://uat-placedeshalles.matooi.com:5000/actuator/importerstatus',
+
 };
 
 /*

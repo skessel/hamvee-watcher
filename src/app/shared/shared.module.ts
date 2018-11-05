@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './service/http.service';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
+import { SecurityService } from './service/security/security.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ export class SharedModule {
             ngModule: SharedModule,
             providers: [
                 HttpService,
+                SecurityService,
             ]
         };
 

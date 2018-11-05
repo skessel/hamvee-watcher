@@ -1,0 +1,4 @@
+<header *ngIf='securityService.isAuthenticated()'>
+  <button class="submit-button logout-button" (click)="securityService.logout()">Logout</button>
+
+</header>
