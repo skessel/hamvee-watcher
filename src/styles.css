@@ -2,7 +2,8 @@
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 body {
-  background-color:  darkslategray; 
+  background-color:  darkslategray;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
 }
 
 header {
@@ -21,8 +22,18 @@ header {
     max-width: 500px;
     width: 100%;
   }
+
+.login-form {
+    margin: 50px auto;
+  }
   
 .example-full-width {
+  width: 100%;
+}
+
+.remember-me-checkbox {
+  display: block;
+  color: rgba(255,255,255,.7);
   width: 100%;
 }
 
@@ -30,7 +41,9 @@ header {
   margin-top: 30px;
   width: 180px;
   padding: 2px;
-  font-family: Roboto,"Helvetica Neue",sans-serif;
+  color: rgba(255,255,255,.7);
+  background-color:  cadetblue;
+  border-color: cadetblue;
 }
 
 .logout-button {
@@ -38,7 +51,6 @@ header {
 }
 
 .form-error {
-  font-family: Roboto,"Helvetica Neue",sans-serif;
   margin-left: 30px;
   color: #f44336;
 }

@@ -27,6 +27,9 @@ export class LoginComponent implements OnInit {
       passwordFormInput : new FormControl('', [
         Validators.required,
       ]),
+
+      rememberMeFlag : new FormControl('', [
+      ])
     });
   }
 
@@ -42,8 +45,9 @@ export class LoginComponent implements OnInit {
 
     const login: string = this.formGroup.get('loginFormInput').value;
     const password: string = this.formGroup.get('passwordFormInput').value;
+    const rememberMe: boolean = this.formGroup.get('rememberMeFlag').value;
 
-    this.authenticated = this.securityService.login(login, password);
+    this.authenticated = this.securityService.login(login, password, rememberMe);
 
     if (this.authenticated) {
       const queryParams: Params = this.route.snapshot.queryParams;
