@@ -12,7 +12,6 @@ export class ServiceStatusColorDirective implements OnChanges {
     constructor(private elementRef: ElementRef) {}
 
     ngOnChanges(): void {
-        console.log('ngOnChanges');
         this.changeCollor();
     }
 

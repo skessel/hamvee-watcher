@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
-import { MatooiStatus, MatooiPing } from '../shared/model/matooiStatus';
-import { ImporterStatus } from '../shared/model/importerStatus';
-import { ItemStatus } from '../shared/model/itemStatus';
+import { MatooiStatus, MatooiPing } from '../../shared/model/matooiStatus';
+import { ImporterStatus } from '../../shared/model/importerStatus';
+import { ItemStatus } from '../../shared/model/itemStatus';
 
 export class ServerOverviewModel {
 

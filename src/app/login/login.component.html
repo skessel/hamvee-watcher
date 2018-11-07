@@ -1,5 +1,5 @@
-<form class="example-form login-form " [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <mat-form-field class="example-full-width">
+<form class="login-form " [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <mat-form-field class="login-form-fild">
     <input matInput type="text" placeholder="Username" formControlName="loginFormInput"/>
     <mat-hint>Username</mat-hint>
     <mat-error *ngIf="formGroup.get('loginFormInput').hasError('required')">
@@ -7,7 +7,7 @@
     </mat-error>
     </mat-form-field>
 
-  <mat-form-field class="example-full-width">
+  <mat-form-field class="login-form-fild">
     <input matInput type="password" placeholder="Password" formControlName="passwordFormInput"/>
     <mat-hint>Password</mat-hint>
     <mat-error *ngIf="formGroup.get('passwordFormInput').hasError('required')">

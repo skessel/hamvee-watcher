@@ -7,8 +7,23 @@ body {
 }
 
 header {
+  background-color:  darkslategray;
   width: 100%;
   display: inline-block;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(255,255,255,.7);
+  transition: background-color 5000s ease-in-out 0s;
+  color: rgba(255,255,255,.7);
 }
 
 .overview-box {
@@ -17,18 +32,16 @@ header {
      display: inline-table;
 }
 
-.example-form {
+.login-form {
+    margin: 50px auto;
     min-width: 150px;
     max-width: 500px;
     width: 100%;
-  }
-
-.login-form {
-    margin: 50px auto;
-  }
-  
-.example-full-width {
+}
+ 
+.login-form-fild {
   width: 100%;
+  color: rgba(255,255,255,.7);
 }
 
 .remember-me-checkbox {
